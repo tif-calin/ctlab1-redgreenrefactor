@@ -6,7 +6,7 @@ export function getName(obj) {
 }
 
 export function copyAndPush(arr, item) {
-  arr.push(item);
+  return [...arr, item];
 }
 
 export function capitalizeAndFilter(arr) {
