@@ -1,4 +1,4 @@
-import { copyAndPush, getName } from './ctlab1.js';
+import { capitalizeAndFilter, copyAndPush, getName } from './ctlab1.js';
 
 describe('getName', () => {
   it('test spot', () => {
@@ -24,5 +24,17 @@ describe('copyAndPush', () => {
   const expected = [1, 2, 3, 4];
 
   expect(actual).toEqual(expected);
-  expect(input, [1, 2, 3]);
+  expect(input).toEqual([1, 2, 3]);
+});
+
+describe('capitalizeAndFilter', () => {
+  const input = ['hi', 'HeLLo', 'hola'];
+  const actual = capitalizeAndFilter(input);
+  const expected = ['HI', 'HELLO', 'HOLA'];
+
+  expect(actual).toEqual(expected);
+});
+
+describe('fetchQuotes', () => {
+  // hi
 });
