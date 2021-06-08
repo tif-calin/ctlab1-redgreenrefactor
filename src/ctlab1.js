@@ -6,10 +6,18 @@ export function getName(obj) {
 }
 
 export function copyAndPush(arr, item) {
+  // arr.push(item);
   return [...arr, item];
 }
 
 export function capitalizeAndFilter(arr) {
+  const newArr = [];
+
+  for(let str of arr) {
+    str = str.toUpper();
+    if(str.startsWith('F')) newArr.push(str);
+  }
+
   return;
 }
 
