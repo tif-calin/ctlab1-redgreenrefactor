@@ -1,4 +1,4 @@
-import { capitalizeAndFilter, copyAndPush, getName } from './ctlab1.js';
+import { capitalizeAndFilter, copyAndPush, fetchQuotes, getName } from './ctlab1.js';
 
 describe('getName', () => {
   it('test spot', () => {
@@ -36,5 +36,12 @@ describe('capitalizeAndFilter', () => {
 });
 
 describe('fetchQuotes', () => {
-  // hi
+  const expected = {
+    character: expect.any(String),
+    quote: expect.any(String),
+    image: expect.any(String)
+  };
+  const actual = fetchQuotes();
+
+  expect(actual).toEqual(expected);
 });
