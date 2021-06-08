@@ -1,5 +1,8 @@
 export function getName(obj) {
-  return obj.name;
+  // return obj['name'];
+  // return obj.name;
+  const { name } = obj;
+  return name;
 }
 
 export function copyAndPush(arr) {

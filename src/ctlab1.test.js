@@ -1,4 +1,4 @@
-import { getName } from './ctlab1.js';
+import { copyAndPush, getName } from './ctlab1.js';
 
 describe('getName', () => {
   it('test spot', () => {
@@ -16,4 +16,12 @@ describe('getName', () => {
 
     expect(actual).toEqual(expected);
   });
+});
+
+describe('copyAndPush', () => {
+  const input = [1, 2, 3];
+  const actual = copyAndPush(input, 4);
+  const expected = [1, 2, 3, 4];
+
+  expect(actual).toEqual(expected);
 });
