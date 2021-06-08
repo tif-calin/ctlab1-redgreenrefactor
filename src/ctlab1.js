@@ -5,8 +5,8 @@ export function getName(obj) {
   return name;
 }
 
-export function copyAndPush(arr) {
-  return;
+export function copyAndPush(arr, item) {
+  arr.push(item);
 }
 
 export function capitalizeAndFilter(arr) {
