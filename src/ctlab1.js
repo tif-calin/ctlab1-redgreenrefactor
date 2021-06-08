@@ -14,11 +14,11 @@ export function capitalizeAndFilter(arr) {
   const newArr = [];
 
   for(let str of arr) {
-    str = str.toUpper();
+    str = str.toUpperCase();
     if(str.startsWith('F')) newArr.push(str);
   }
 
-  return;
+  return newArr;
 }
 
 export function fetchQuotes(obj) {
