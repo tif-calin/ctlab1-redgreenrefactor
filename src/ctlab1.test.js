@@ -24,4 +24,5 @@ describe('copyAndPush', () => {
   const expected = [1, 2, 3, 4];
 
   expect(actual).toEqual(expected);
+  expect(input, [1, 2, 3]);
 });
