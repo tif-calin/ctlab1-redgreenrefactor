@@ -10,15 +10,8 @@ export function copyAndPush(arr, item) {
   return [...arr, item];
 }
 
-export function capitalizeAndFilter(arr) {
-  const newArr = [];
-
-  for(let str of arr) {
-    str = str.toUpperCase();
-    if(!str.startsWith('F')) newArr.push(str);
-  }
-
-  return newArr;
+export function capitalizeAndFilter(arr, filter = 'F') {
+  return arr.map(str => str.toUpperCase()).filter(str => !str.startsWith(filter));
 }
 
 export function fetchQuotes(obj) {
