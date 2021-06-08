@@ -35,13 +35,13 @@ describe('capitalizeAndFilter', () => {
   expect(actual).toEqual(expected);
 });
 
-describe('fetchQuotes', () => {
+describe('fetchQuotes', async () => {
   const expected = {
     character: expect.any(String),
     quote: expect.any(String),
     image: expect.any(String)
   };
-  const actual = fetchQuotes();
+  const actual = await fetchQuotes();
 
   expect(actual).toEqual(expected);
 });
