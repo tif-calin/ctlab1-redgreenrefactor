@@ -15,7 +15,7 @@ export function capitalizeAndFilter(arr) {
 
   for(let str of arr) {
     str = str.toUpperCase();
-    if(str.startsWith('F')) newArr.push(str);
+    if(!str.startsWith('F')) newArr.push(str);
   }
 
   return newArr;

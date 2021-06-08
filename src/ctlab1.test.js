@@ -28,7 +28,7 @@ describe('copyAndPush', () => {
 });
 
 describe('capitalizeAndFilter', () => {
-  const input = ['hi', 'HeLLo', 'hola'];
+  const input = ['hi', 'HeLLo', 'hola', 'fine'];
   const actual = capitalizeAndFilter(input);
   const expected = ['HI', 'HELLO', 'HOLA'];
 
